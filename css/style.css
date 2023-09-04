@@ -1,0 +1,839 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #fdfdfd;
+    --text-color: black;
+    --main-color: blue;
+    --white-color: #fdfdfd;
+    --shadow-color: black;
+    --icon-color: blue;   
+}
+
+.dark-mode {
+    --bg-color: black;
+    --text-color: white;
+    --shadow-color: rgba(0,0,0, .7);
+    --icon-color: white;
+
+}
+
+html {
+    font-size: 62.5%;
+    overflow: scroll;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 7%;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    transition: .5s;
+
+}
+
+.header.sticky {
+    background-color: var(--bg-color);
+    box-shadow: 0 .1rem 1rem var(--shadow-color);
+
+}
+
+.logo {
+    font-size: 3.5rem;
+    color: var(--main-color);
+    font-weight: 600;
+    cursor: default;
+    margin-right: auto;
+
+}
+
+.navbar a {
+    position: relative;
+    font-size: 1.7rem;
+    color: var(--white-color);
+    font-weight: 500;
+    margin-right: 3.5rem;
+
+
+}
+
+.header.sticky .navbar a {
+    color: var(--text-color);
+}
+
+.navbar a.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: .2rem;
+    background: var(--white-color);
+
+}
+
+.header.sticky .navbar a.active::before {
+    background-color: blue;
+    opacity: .7;
+}
+
+#darkMode-icon {
+    font-size: 4rem;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.header.sticky #darkMode-icon {
+    color: var(--text-color);
+    opacity: .9;
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 7% 2rem;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+
+}
+
+.home .home-content {
+    max-width: 44rem;
+
+}
+
+.home-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: .3;
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    margin-bottom: .3rem;
+}
+
+.home-content p {
+    font-size: 1.6rem;
+
+}
+
+.home-content .social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 6rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    box-shadow: 0 .2rem .5rem var(--shadow-color);
+    font-size: 3rem;
+    color: var(--icon-color);
+    margin: 2.5rem 1.5rem 3rem 0;
+    transition: .5s ease;
+
+}
+
+.home-content .social-media a:hover {
+    background: var(--main-color);
+    color: var(--white-color);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1.2rem 2.8rem;
+    background: var(--main-color);
+    border-radius: .6rem;
+    box-shadow: 0 .2rem .5rem var(--shadow-color);
+    font-size: 1.6rem;
+    color: var(--white-color);
+    letter-spacing: 1rem;
+    font-weight: 600;
+    border: .2rem solid transparent;
+    transition: .5s ease;
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--main-color);
+    border-color: var(--main-color);
+
+}
+
+.home .profession-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 900px;
+    border-top: 465px solid blue;
+    border-right: 465px solid blue;
+    border-bottom: 465px solid blue;
+    border-left: 465px solid transparent;
+
+
+}
+
+
+
+.profession {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--main-color);
+    top: -40px;
+    left: -500px;
+
+
+}
+
+.home .profession i {
+    font-size: 3.8rem;
+
+}
+
+.home .profession h3 {
+    font-size: 3.5rem;
+    line-height: 1;
+    font-weight: 600;
+}
+
+#imagem {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    border: 0.3rem solid;
+}
+
+span {
+    color: var(--main-color);
+
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 4rem;
+
+}
+
+.about-content {
+    width: 500px;
+}
+
+.heading {
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.5;
+}
+
+.about-content h3 {
+    font-size: 2rem;
+
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+.fundo {
+    text-align: center;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 200px;
+}
+
+.habilidades-item {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4,1fr);
+    font-size: 40px;
+}
+
+#icones  {
+    font-size: 120px;
+    color: var(--text-color);
+}
+
+#cor {
+    color: var(--text-color);
+}
+
+.habilidades {
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.fundo h1 {
+    padding-bottom: 3rem;
+    
+    color: var(--main-color);
+    margin-bottom: 100px;
+}
+
+
+.habilidades div {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    color: black;
+    padding: 1rem;
+}
+
+.portifolio {
+    padding-bottom: 10rem;
+}
+
+.portifolio h2 {
+    margin-bottom: 4rem;
+}
+
+.portifolio .portifolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.portifolio-container .portifolio-box {
+
+    position: relative;
+    display: flex;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+    overflow: hidden;
+}
+
+.portifolio-box img {
+    width: 100%;
+    transition: .5s ease;
+}
+
+.portifolio-box:hover img {
+    transform: scale(1.1);
+}
+
+.portifolio-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portifolio-box .portifolio-layer {
+
+    color: black;
+    height: 100px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.portifolio-layer h4 {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--text-color);
+
+}
+
+.portifolio-layer p {
+    color: var(--text-color);
+}
+
+.contact h2 {
+    margin-bottom: 3rem;
+
+}
+
+.contact form {
+
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+    box-shadow: 0 1.rem .5rem var(--shadow-color);
+}
+
+.contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+@media (max-width:1500px) {
+    .profession {
+        left: -400px;
+    }
+}
+
+@media (max-width: 1360px) {
+    html {
+        font-size: 65%;
+    }
+
+    .navbar a {
+        font-size: 2.6rem;
+    }
+
+    .home .profession-container {
+        height: 85.8rem;
+        right: -15rem;
+
+    }
+
+    .home .home-content p {
+        font-size: 2rem;
+    }
+
+    .home-content .social-media a {
+        font-size: 4rem;
+        height: 7rem;
+        width: 7rem;
+    }
+
+    .about-content h3 {
+        font-size: 3rem;
+
+    }
+
+    .about-content p {
+        font-size: 2rem;
+
+    }
+
+    .about {
+        margin-left: 8%;
+    }
+
+    .habilidades {
+
+        margin-left: 220px;
+    }
+
+    .portifolio {
+        margin-left: 80px;
+    }
+
+    .portifolio .portifolio-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
+
+@media (max-width:1100px) {
+    .header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    
+
+    .home .profession-container .profession {
+        display: none;
+
+    }
+
+    .home .profession-container {
+        height: 85.8rem;
+        right: -30rem;
+    }
+
+    .home .home-content p {
+        font-size: 2.5rem;
+    }
+
+    .btn {
+        font-size: 2.0rem;
+    }
+
+    .portifolio {
+        margin-left: 160px;
+        width: 100vw;
+    }
+
+    .contact {
+        margin-left: 150px;
+        width: 100vw;
+    }
+
+
+}
+
+@media (max-width: 900px) {
+
+    .home .home-content {
+        max-width: 50rem;
+        margin-left: 30px;
+
+    }
+
+    .home .profession-container {
+        right: -45rem;
+    }
+
+    .home .home-content p {
+        font-size: 3rem;
+    }
+
+    .portifolio {
+        padding-bottom: 7rem;
+        width: 100vw;
+        font-size: 50px;
+        margin-left: 230px;
+    }
+
+    .navbar a {
+        font-size: 3.0rem;
+    }
+
+    .btn {
+        font-size: 2.5rem;
+    }
+
+    .about {
+        width: 100vw;
+        margin-left: 170px;
+    }
+
+    .habilidades-item {
+        grid-template-columns: repeat(2,1fr);
+        font-size: 50px;
+    }
+
+    .fundo {
+        margin-left: 200px;
+    }
+
+    #icones {
+        font-size: 150px;
+    }
+
+    
+
+    .portifolio .portifolio-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact {
+        margin-left: 230px;
+    }
+
+
+}
+
+@media screen and (max-width: 780px) and (min-width: 500px) {
+
+    #menu-icon {
+        display: block;
+        font-size: 50px;
+        margin-left: 50px;
+        color: var(--text-color);
+    }
+
+    .header {
+        background-color: blue;
+    }
+
+    .header a {
+        color: var(--text-color);
+    }
+
+    .header.sticky #darkMode-icon {
+        font-size: 50px;
+    }
+
+    .home .profession-container {
+        display: none;
+
+    }
+
+    .navbar {
+        position: absolute;
+        top: 95px;
+        right: .3rem;
+        width: 150px;
+        padding: 1rem 3%;
+        background-color: blue;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        display: none;
+        text-align: end;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+
+        display: flex;
+        justify-content: flex-end;
+        font-size: 1.7rem;
+        margin: 3rem 0;
+        color: white;
+    }
+
+    .home-content h3 {
+        margin-top: 25px;
+        font-size: 2.6rem;
+    }
+
+    .home-content h1 {
+        font-size: 4rem;
+    }
+
+    .home .home-content p {
+        font-size: 2.5rem;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .about-content h2 {
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .about-content h3 {
+        font-size: 2.2rem;
+        margin-left: 30px;
+    }
+
+    .about-content p {
+        font-size: 2rem;
+        padding: 20px;
+        margin-left: 60px;
+    }
+
+    .btn {
+        font-size: 2rem;
+    }
+
+    #imagem {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        margin-top: -2rem;
+    }
+
+    .habilidades {
+        margin: 0px;
+    }
+
+    .fundo {
+        margin: 0px;
+    }
+
+    .portifolio .portifolio-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .portifolio {
+        margin-left: 10px;
+    }
+
+    .contact {
+        margin-left: 30px;
+    }
+
+    .home-content .social-media a {
+        font-size: 3rem;
+        height: 6rem;
+        width: 6rem;
+    }
+}
+
+@media screen and (max-width: 500px) and (min-width: 350px) {
+    #menu-icon {
+        display: block;
+        font-size: 50px;
+        margin-left: 50px;
+        color: var(--text-color);
+    }
+
+    .header {
+        background-color: blue;
+    }
+
+    .header a {
+        color: var(--text-color);
+    }
+
+    .header.sticky #darkMode-icon {
+        font-size: 50px;
+    }
+
+    .home .profession-container {
+        display: none;
+
+    }
+
+    .navbar {
+        position: absolute;
+        top: 95px;  
+        right: .3rem;
+        width: 150px;
+        padding: 1rem 3%;
+        background-color: blue;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+
+        display: flex;
+        justify-content: flex-end;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: white;
+    }
+
+    .home-content h3 {
+        margin-top: 25px;
+        font-size: 2.6rem;
+    }
+
+    .home-content h1 {
+        font-size: 4rem;
+    }
+
+    .home .home-content p {
+        font-size: 2.5rem;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .about-content h2 {
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .about-content h3 {
+        font-size: 2.2rem;
+        margin-left: 30px;
+    }
+
+    .about-content {
+        width: 340px;
+    }
+
+    .about-content p {
+        font-size: 2rem;
+        padding: 0px;
+        margin-left: 0px;
+    }
+
+    .btn {
+        font-size: 1.5rem;
+    }
+
+    #imagem {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        margin-top: -2rem;
+    }
+
+    .habilidades {
+        margin: 0px;
+
+    }
+
+    .fundo {
+        margin: 0px;
+    }
+
+    .habilidades-item {
+        grid-template-columns: repeat(1,1fr);
+
+    }
+
+    .portifolio .portifolio-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .portifolio {
+        margin-left: 10px;
+    }
+
+    .contact {
+        margin-left: 0px;
+    }
+
+    .home-content .social-media a {
+        font-size: 2rem;
+        height: 5rem;
+        width: 5rem;
+    }
+}
+
