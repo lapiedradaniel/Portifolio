@@ -16,13 +16,13 @@
     --main-color: blue;
     --white-color: #fdfdfd;
     --shadow-color: black;
-    --icon-color: blue;   
+    --icon-color: blue;
 }
 
 .dark-mode {
     --bg-color: black;
     --text-color: white;
-    --shadow-color: rgba(0,0,0, .7);
+    --shadow-color: rgba(0, 0, 0, .7);
     --icon-color: white;
 
 }
@@ -114,7 +114,7 @@ body {
 }
 
 section {
-    min-height: 110vh;
+    min-height: 100vh;
     padding: 10rem 7% 2rem;
 }
 
@@ -191,18 +191,28 @@ section {
 
 .home .profession-container {
     position: absolute;
-    top: 0;
+    top: 46%;
     right: 0;
-    width: 900px;
-    border-top: 465px solid blue;
-    border-right: 465px solid blue;
-    border-bottom: 465px solid blue;
-    border-left: 465px solid transparent;
+    width: 875px;
+    height: 875px;
+    overflow: hidden;
+    transform: translateY(-50%);
+
 
 
 }
 
-
+.home .profession-container .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 430px solid blue;
+    border-right: 430px solid blue;
+    border-bottom: 430px solid blue;
+    border-left: 430px solid transparent;
+}
 
 .profession {
     position: absolute;
@@ -284,11 +294,11 @@ span {
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     font-size: 40px;
 }
 
-#icones  {
+#icones {
     font-size: 120px;
     color: var(--text-color);
 }
@@ -305,7 +315,7 @@ span {
 
 .fundo h1 {
     padding-bottom: 3rem;
-    
+
     color: var(--main-color);
     margin-bottom: 100px;
 }
@@ -420,61 +430,6 @@ span {
     }
 }
 
-@media (max-width: 1360px) {
-    html {
-        font-size: 65%;
-    }
-
-    .navbar a {
-        font-size: 2rem;
-    }
-
-    .home .profession-container {
-        height: 85.8rem;
-        right: -15rem;
-
-    }
-
-    .home .home-content p {
-        font-size: 2rem;
-    }
-
-    .home-content .social-media a {
-        font-size: 4rem;
-        height: 7rem;
-        width: 7rem;
-    }
-
-    .about-content h3 {
-        font-size: 3rem;
-
-    }
-
-    .about-content p {
-        font-size: 2rem;
-
-    }
-
-    .about {
-        margin-left: 8%;
-    }
-
-    .habilidades {
-
-        margin-left: 220px;
-    }
-
-    .portifolio {
-        margin-left: 80px;
-    }
-
-    .portifolio .portifolio-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-
-}
-
 @media (max-width:1100px) {
     .header {
         padding: 2rem 3%;
@@ -484,7 +439,11 @@ span {
         padding: 10rem 3% 2rem;
     }
 
-    
+    .navbar a {
+        font-size: 2rem;
+    }
+
+
 
     .home .profession-container .profession {
         display: none;
@@ -504,6 +463,14 @@ span {
         font-size: 2.0rem;
     }
 
+    .about {
+        margin-left: 150px;
+    }
+
+    .fundo {
+        margin-left: 150px;
+    }
+
     .portifolio {
         margin-left: 160px;
         width: 100vw;
@@ -512,68 +479,6 @@ span {
     .contact {
         margin-left: 150px;
         width: 100vw;
-    }
-
-
-}
-
-@media (max-width: 900px) {
-
-    .home .home-content {
-        max-width: 50rem;
-        margin-left: 30px;
-
-    }
-
-    .home .profession-container {
-        right: -45rem;
-    }
-
-    .home .home-content p {
-        font-size: 3rem;
-    }
-
-    .portifolio {
-        padding-bottom: 7rem;
-        width: 100vw;
-        font-size: 50px;
-        margin-left: 230px;
-    }
-
-    .navbar a {
-        font-size: 2.4rem;
-    }
-
-    .btn {
-        font-size: 2.5rem;
-    }
-
-    .about {
-        width: 100vw;
-        margin-left: 170px;
-    }
-
-    .habilidades-item {
-        grid-template-columns: repeat(2,1fr);
-        font-size: 50px;
-    }
-
-    .fundo {
-        margin-left: 200px;
-    }
-
-    #icones {
-        font-size: 150px;
-    }
-
-    
-
-    .portifolio .portifolio-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .contact {
-        margin-left: 230px;
     }
 
 
@@ -685,6 +590,11 @@ span {
         margin: 0px;
     }
 
+    .habilidades-item {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
     .portifolio .portifolio-container {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -731,7 +641,7 @@ span {
 
     .navbar {
         position: absolute;
-        top: 95px;  
+        top: 95px;
         right: .3rem;
         width: 150px;
         padding: 1rem 3%;
@@ -814,7 +724,7 @@ span {
     }
 
     .habilidades-item {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
 
     }
 
@@ -836,4 +746,3 @@ span {
         width: 5rem;
     }
 }
-
