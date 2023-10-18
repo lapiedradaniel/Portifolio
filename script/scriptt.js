@@ -1,7 +1,7 @@
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
- menuIcon.onclick = () => {
+menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
@@ -20,3 +20,32 @@ darkModeIcon.addEventListener("click", () => {
     darkModeIcon.classList.toggle('bx-sun');
     document.body.classList.toggle('dark-mode');
 })
+
+let confir = document.querySelector('#Btn');
+let nome = document.querySelector('#inputNome');
+let email = document.querySelector('#inputEmail');
+let phone = document.querySelector('#inputPhone');
+let assunto = document.querySelector('#inputAssunto');
+let areatexto = document.querySelector('#textAreaMensagem');
+
+
+
+confir.addEventListener("click", () => {
+
+    if (nome.value === "" && email.value === "" && phone.value === "" && assunto.value === "" && areatexto.value === "") {
+
+        
+        alert("Preencha os campos corretamente.");
+
+
+    } else {
+        alert("E-mail enviado com sucesso!");
+
+
+
+    }
+
+})
+
+
+

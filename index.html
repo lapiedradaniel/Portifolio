@@ -168,19 +168,25 @@
     <section class="contact" id="contact">
         <h2 class="heading"> <span>Contato</span></h2>
 
-        <form action="#">
+        <form action="https://api.staticforms.xyz/submit" method="post">
+
+
+            <input type="hidden" name="accessKey" value="4425efe9-3acc-4aab-b02f-c6f4ddb39960">
+            <input type="hidden" name="redirectTo" value="https://lapiedradaniel.github.io/Portifolio/?#home">
+
+
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+                <input id="inputNome" name="name" required maxlength="25" minlength="6" type="text" placeholder="Full Name">
+                <input id="inputEmail" name="email" required maxlength="50" type="email" placeholder="Email Address">
 
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
+                <input id="inputPhone" name="phone" required minlength="11" maxlength="11" type="number" placeholder="Mobile Number">
+                <input id="inputAssunto" name="Subject" minlength="10" maxlength="50" required type="text" placeholder="Email Subject">
 
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
-            <input type="submit" value="Enviar Mensagem" class="btn">
+            <textarea name="message" id="textAreaMensagem" required maxlength="200" cols="30" rows="10" placeholder="Your message"></textarea>
+            <input id="Btn" type="submit" value="Enviar Mensagem" class="btn">
         </form>
     </section>
 
