@@ -32,7 +32,7 @@ let areatexto = document.querySelector('#textAreaMensagem');
 
 confir.addEventListener("click", () => {
 
-    if (nome.value === "" && email.value === "" && phone.value === "" && assunto.value === "" && areatexto.value === "") {
+    if (nome.value === "" || email.value === "" ||  phone.value === "" ||  assunto.value === "" ||  areatexto.value === "") {
 
         
         alert("Preencha os campos corretamente.");
