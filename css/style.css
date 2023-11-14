@@ -68,10 +68,10 @@ body {
 
 .navbar a {
     position: relative;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     color: var(--white-color);
     font-weight: 500;
-    margin-right: 3.5rem;
+    margin-right: 3rem;
 
 
 }
