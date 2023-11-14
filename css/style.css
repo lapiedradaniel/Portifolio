@@ -208,10 +208,10 @@ section {
     right: 0;
     width: 0;
     height: 0;
-    border-top: 430px solid blue;
-    border-right: 430px solid blue;
-    border-bottom: 430px solid blue;
-    border-left: 430px solid transparent;
+    border-top: 470px solid blue;
+    border-right: 470px solid blue;
+    border-bottom: 410px solid blue;
+    border-left: 410px solid transparent;
 }
 
 .profession {
