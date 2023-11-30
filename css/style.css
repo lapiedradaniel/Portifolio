@@ -372,15 +372,18 @@ span {
 .portifolio-box .portifolio-layer {
 
     color: black;
-    height: 100px;
+    height: 300px;
     padding: 10px;
     font-size: 14px;
+    
 }
 
 .portifolio-layer h4 {
     font-size: 2rem;
     text-align: center;
     color: var(--text-color);
+    margin: 10px;
+
 
 }
 
@@ -471,9 +474,28 @@ span {
         margin-left: 150px;
     }
 
+    .habilidades {
+        max-width: 1400px;
+        
+        text-align: center;
+        width: 100vw;
+
+    }
+
+    .portifolio .portifolio-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
     .portifolio {
         margin-left: 160px;
         width: 100vw;
+    }
+
+    .portifolio-box .portifolio-layer {
+        color: black;
+        height: 300px;
+        padding: 10px;
+        font-size: 20px;
     }
 
     .contact {
@@ -601,6 +623,13 @@ span {
 
     .portifolio {
         margin-left: 10px;
+    }
+
+    .portifolio-box .portifolio-layer {
+        color: black;
+        height: 300px;
+        padding: 10px;
+        font-size: 20px;
     }
 
     .contact {
@@ -734,6 +763,13 @@ span {
 
     .portifolio {
         margin-left: 10px;
+    }
+
+    .portifolio-box .portifolio-layer {
+        color: black;
+        height: 300px;
+        padding: 10px;
+        font-size: 15px;
     }
 
     .contact {
