@@ -570,6 +570,10 @@ span {
         height: 6rem;
         width: 6rem;
     }
+
+    section {
+        min-height: 80vh;
+    }
 }
 
 @media screen and (max-width: 500px) and (min-width: 350px) {
