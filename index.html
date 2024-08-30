@@ -3,25 +3,48 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Portfólio de Daniel Santos, desenvolvedor de software com expertise em C#, .NET, ASP.NET, JavaScript, Blazor, React, e mais. Confira meus projetos e entre em contato.">
+    <meta name="author" content="Daniel Santos">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Portfólio de Daniel Santos">
+    <meta property="og:description" content="Desenvolvedor de software com experiência em C#, .NET, ASP.NET, JavaScript, Blazor, React e SQL. Confira meus projetos e entre em contato.">
+    <meta property="og:image" content="http://portifoliodaniel.tech/imagens/FotoDaniel.jpeg">
+    <meta property="og:url" content="http://portifoliodaniel.tech">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Portfólio de Daniel Santos">
+    <meta name="twitter:description" content="Desenvolvedor de software com experiência em C#, .NET, ASP.NET, JavaScript, Blazor, React e SQL. Confira meus projetos e entre em contato.">
+    <meta name="twitter:image" content="http://portifoliodaniel.tech/imagens/FotoDaniel.jpeg">
     <title>Portfolio</title>
      
     <link rel="shortcut icon" href="imagens/IconeIcon.png" type="image/x-icon">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-          
-
-    
-
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./css/style.css">
-</head>
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Daniel Santos",
+      "description": "Desenvolvedor de software com experiência em C#, .NET, ASP.NET, JavaScript, Blazor, React e SQL.",
+      "url": "http://portifoliodaniel.tech",
+      "image": "http://portifoliodaniel.tech/imagens/FotoDaniel.jpeg",
+      "sameAs": [
+        "https://www.linkedin.com/in/daniel-santos-11a573293/",
+        "https://github.com/lapiedradaniel",
+        "https://www.instagram.com/daniel.santos1995/?hl=pt-br"
+      ]
+    }
+    </script>
+
 
 <body>
     <header class="header">
-        <a href="#" class="logo">Portfólio.</a>
+        <a href="http://portifoliodaniel.tech/" class="logo">Portfólio.</a>
 
         <nav class="navbar">
             <a href="#home" class="active">Início</a>
@@ -39,8 +62,11 @@
 
     <section class="home" id="home">
         <div class="home-content">
-            <h3>Olá, eu sou</h3>
-            <h1>Daniel Santos</h1>
+            <h1 class="animated-text" style="margin-bottom: 10px;">
+                Olá, eu sou <span class="highlight">Daniel Santos</span>!
+            </h1>
+            
+
             <p>Sou um Programador Desenvolvedor Backend, tenho experiência e conhecimento criando     aplicações com  
                 C# | .NET | ASP.NET | Javascript | React | Blazor | SQL </p>
 
@@ -74,7 +100,8 @@
 
     <section class="about" id="about">
         <div class="about-img">
-            <img id="imagem" src="imagens/FotoDaniel.jpeg" alt="">
+            <img id="imagem" src="imagens/FotoDaniel.jpeg" alt="Daniel Santos, Desenvolvedor Backend">
+
         </div>
 
         <div class="about-content">
@@ -125,7 +152,7 @@
 
             <div class="portifolio-box">
                 <a href="https://github.com/lapiedradaniel/Lanches" target="_blank"><img
-                        src="imagens/Aurora-2.jpeg" alt="" ></a>
+                        src="imagens/Aurora-2.jpeg" alt="Veja o projeto Aurora no GitHub" ></a>
                 <div class="portifolio-layer" style="margin-bottom: 15px;">
                     <h4> Aurora</h4>
                     <p>Aurora  é uma solução ERP de código aberto voltada para microempresas com orçamentos limitados. Projetado para integração flexível com serviços de terceiros, oferece funcionalidades essenciais como gerenciamento de estoque, acompanhamento de vendas, CRM e relatórios financeiros. Desenvolvido com Blazor, JavaScript, HTML e CSS para o frontend, e C#, .NET, Entity Framework e JWT para autenticação no backend, seguindo padrões como Domain-Driven Design. Este projeto demonstra meu compromisso em criar soluções empresariais robustas e acessíveis para pequenos negócios. </p>
@@ -135,7 +162,7 @@
 
             <div class="portifolio-box">
                 <a href="https://github.com/lapiedradaniel/Lanches" target="_blank"><img
-                        src="imagens/Lanches.jpeg" alt=""></a>
+                        src="imagens/Lanches.jpeg" alt="Veja o projeto Lanches Feane no GitHub"></a>
                 <div class="portifolio-layer">
                     <h4>Lanches Feane</h4>
                     <p>Desenvolvi e aprimorei um site de lanches dinâmico e atrativo, utilizando ASP.NET MVC, SQL Server, Entity Framework e Identity. O site oferece uma experiência intuitiva aos usuários, com recursos de busca e interação. Implementei um sistema de autenticação seguro e eficiente, proporcionando uma experiência personalizada aos visitantes. Este projeto reflete minha habilidade em criar soluções web envolventes e funcionais. </p>
@@ -145,7 +172,7 @@
 
             <div class="portifolio-box">
                 <a href="https://github.com/lapiedradaniel/API-SistemaDeTarefas" target="_blank"><img
-                        src="imagens/API.jpg" alt=""></a>
+                        src="imagens/API.jpg" alt="Veja o projeto API-Sistemas de Tarefas no GitHub"></a>
                 <div class="portifolio-layer">
                     <h4>API de Cadastro de Usuários e Tarefas </h4>
                     <p>API ASP.NET Core para cadastro de usuários e tarefas, permitindo buscar, cadastrar, atualizar e apagar registros. Utiliza enumeração para status de tarefas e possui repositórios para interação com o banco de dados. Ideal para gerenciamento eficiente de informações.</p>
@@ -155,7 +182,7 @@
 
             <div class="portifolio-box">
                 <a href="https://github.com/lapiedradaniel/Projeto-ASP.Net-MVC" target="_blank"><img
-                        src="imagens/novoMVCCadastro.jpeg" alt=""></a>
+                        src="imagens/novoMVCCadastro.jpeg" alt="Veja o projeto Asp.Net MVC no GitHub"></a>
                 <div class="portifolio-layer">
                     <h4>Listagem de Contatos (ASP.NET MVC)</h4>
                     <p>Este projeto, desenvolvido em ASP.NET MVC, proporciona um sistema para listar, adicionar, editar e apagar contatos. Utilizando um padrão de arquitetura MVC, o código inclui um controlador (ContatoController), uma classe de modelo (ContatoModel), e um repositório (ContatoRepositorio) para interagir com o banco de dados. As visualizações permitem navegar pela lista de contatos, adicionar novos, e realizar operações de edição e exclusão.</p>
@@ -165,7 +192,7 @@
 
             <div class="portifolio-box">
                 <a href="https://github.com/lapiedradaniel/Filmes-TMDB" target="_blank"><img
-                        src="imagens/Filmes 4.jpeg" alt="">
+                        src="imagens/Filmes 4.jpeg" alt="Veja o projeto Filmes no GitHub">
                     </a>
                         
                 <div class="portifolio-layer" style="margin-bottom: 65px;">
@@ -179,7 +206,7 @@
 
             <div class="portifolio-box">
                 <a href="https://lapiedradaniel.github.io/Hora-do-Dia/" target="_blank"><img src="imagens/Horas.png"
-                        alt=""></a>
+                        alt="Veja o projeto Hora do Dia no GitHub"></a>
                 <div class="portifolio-layer">
                     <h4>Tempo do Dia: Uma Jornada Visual pelas Horas do Dia</h4>
                     <p>Este projeto interativo, intitulado "Hora do Dia", exibe uma mensagem dinâmica e altera uma
@@ -192,7 +219,7 @@
             </div>
             <div class="portifolio-box">
                 <a href="https://lapiedradaniel.github.io/Calculadora-js/" target="_blank"><img
-                        src="imagens/Calculadora.png" alt=""></a>
+                        src="imagens/Calculadora.png" alt="Calculadora"></a>
                 <div class="portifolio-layer">
                     <h4>Calculadora Web: Realize Operações Matemáticas Rapidamente</h4>
                     <p>Este projeto é uma calculadora web interativa que permite realizar operações matemáticas básicas.
@@ -205,7 +232,7 @@
             </div>
             <div class="portifolio-box">
                 <a href="https://lapiedradaniel.github.io/Tela-de-Login/" target="_blank"><img src="imagens/Login.png"
-                        alt=""></a>
+                        alt="Veja o projeto Tela de Login no GitHub"></a>
                 <div class="portifolio-layer">
                     <h4>Login Moderno: Acesse sua Conta com Facilidade</h4>
                     <p>
@@ -220,7 +247,7 @@
             </div>
             <div class="portifolio-box">
                 <a href="https://lapiedradaniel.github.io/Projeto-Cordel/" target="_blank"><img
-                        src="imagens/Paralax.png" alt=""></a>
+                        src="imagens/Paralax.png" alt="Veja o projeto Cordel no GitHub"></a>
                 <div class="portifolio-layer">
                     <h4>Cordel Moderno de Milton Duarte: Poesia e Tecnologia</h4>
                     <p>Este projeto é uma página web que exibe um cordel moderno do poeta Milton Duarte, combinando
@@ -233,7 +260,7 @@
             </div>
             <div class="portifolio-box">
                 <a href="https://lapiedradaniel.github.io/android/" target="_blank"><img src="imagens/Tecnologia.png"
-                        alt=""></a>
+                        alt="Veja o projeto Historia do Android no GitHub"></a>
                 <div class="portifolio-layer">
                     <h4>A História do Mascote do Android</h4>
                     <p>Este projeto é uma página web que explora a história do mascote do Android, Bugdroid. Desde a
@@ -245,7 +272,7 @@
             </div>
             <div class="portifolio-box">
                 <a href="https://lapiedradaniel.github.io/Redes-Sociais-/" target="_blank"><img
-                        src="imagens/RedesSociais (1).png" alt=""></a>
+                        src="imagens/RedesSociais (1).png" alt="Veja o projeto Redes Sociais no GitHub"></a>
                 <div class="portifolio-layer">
                     <h4>Redes sociais</h4>
                     <p>Esta página web serve como um hub para redes sociais, apresentando ícones clicáveis para
@@ -258,7 +285,7 @@
 
             <div class="portifolio-box">
                 <a href="https://lapiedradaniel.github.io/Clima/" target="_blank"><img
-                        src="imagens/Tempoooooo.jpeg" alt=""></a>
+                        src="imagens/Tempoooooo.jpeg" alt="Veja o projeto Previsão do Tempo no GitHub"></a>
                 <div class="portifolio-layer">
                     <h4>Clima Agora</h4>
                     <p>Explore as condições climáticas de qualquer cidade com o "Clima Agora". Digite o nome da cidade,

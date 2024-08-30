@@ -98,6 +98,12 @@ body {
     opacity: .7;
 }
 
+.highlight {
+    font-weight: bold;
+    color: #333; /* Exemplo de cor */
+}
+
+
 #darkMode-icon {
     font-size: 4rem;
     color: var(--white-color);
