@@ -306,14 +306,15 @@ span {
     font-size: 40px;
 }
 
-#icones {
+.icones {
     font-size: 120px;
     color: var(--text-color);
 }
 
-#cor {
+.cor {
     color: var(--text-color);
 }
+
 
 .habilidades {
     max-width: 1400px;
